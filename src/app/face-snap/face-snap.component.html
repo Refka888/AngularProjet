@@ -2,5 +2,8 @@
 <img [src]="imageUrl" [alt]="title">
 <p>Mise en ligne le : {{createdDate}}</p>
 <p>{{description}}</p>
-<p> {{snaps}}</p>
+<p> 
+    <button (click)="onSnap()">{{buttonText}}❤️</button>
+    {{snaps}}
+</p>
 
