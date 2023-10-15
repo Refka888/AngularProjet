@@ -3,8 +3,7 @@ export class FaceSnap{
                  public description: string, 
                  public createdDate: Date, 
                  public snaps: number, 
-                 public imageUrl: string) {
-        
-      }    
+                 public imageUrl: string,
+                 public location?: string) {}   
 
 }

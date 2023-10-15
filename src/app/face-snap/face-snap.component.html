@@ -2,6 +2,7 @@
 <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
 <p>Mise en ligne le : {{faceSnap.createdDate}}</p>
 <p>{{faceSnap.description}}</p>
+<p *ngIf="faceSnap.location === 'Paris' ">Photo prise à {{ faceSnap.location}}</p>
 <p> 
     <button (click)="onSnap()">{{buttonText}}❤️</button>
     {{faceSnap.snaps}}
